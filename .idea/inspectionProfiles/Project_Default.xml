@@ -1,0 +1,24 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AccessibilityTestFramework" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintHardcodedText" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintSetTextI18n" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintUnusedAttribute" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="BottomAppBar" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="BottomNav" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Bounds" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ButtonSize" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LocaleText" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LongText" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Overlap" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SystemUi" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TextFieldSize" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="WearMargin" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
