@@ -1,8 +1,38 @@
 <resources>
+    <!-- App Info -->
     <string name="app_name">INSTAPRO</string>
+
+    <!-- User Info (Default Value) -->
     <string name="user_name">atalariq__</string>
     <string name="bio">Software Engineering Student | UGM \'25 | vimmer</string>
     <string name="full_name">Atalariq Barra H.</string>
     <string name="pronoun">he/him</string>
     <string name="social_link">atalariq.dev</string>
+
+    <!-- Screen Titles & Labels -->
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="label_username">Username</string>
+    <string name="label_name">Name</string>
+    <string name="label_pronoun">Pronouns</string>
+    <string name="label_bio">Bio</string>
+    <string name="label_link">Links</string>
+
+    <!-- Buttons & Actions -->
+    <string name="action_edit_profile">Edit Profile</string>
+    <string name="action_share_profile">Share Profile</string>
+    <string name="action_save">Save</string>
+    <string name="action_back">Back</string>
+    <string name="action_change_photo">Change profile picture</string>
+
+    <!-- Dynamic Profile Stats Formats -->
+    <string name="stats_posts_format">%1$d\npost</string>
+    <string name="stats_followers_format">%1$d\nfollowers</string>
+    <string name="stats_following_format">%1$d\nfollowing</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="cd_profile_picture">Profile Picture</string>
+    <string name="cd_link_icon">Link Icon</string>
+    <string name="cd_post_image">Post Image</string>
+    <string name="cd_username">User Name</string>
+    <string name="cd_full_name">Display Name</string>
 </resources>

@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".PhotoProfileActivity">
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:adjustViewBounds="false"
             android:background="@drawable/bg_circle"
             android:clipToOutline="true"
-            android:contentDescription="Profile Picture"
+            android:contentDescription="@string/cd_profile_picture"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/pp"/>
 
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="12dp"
-            android:contentDescription="User name"
+            android:contentDescription="@string/cd_username"
             android:text="@string/user_name"
             android:textSize="32sp"
             android:textStyle="bold"/>
@@ -45,9 +45,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="4dp"
-            android:contentDescription="Display Name"
+            android:contentDescription="@string/cd_full_name"
             android:text="@string/full_name" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/action_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
@@ -30,7 +31,7 @@
         android:scaleType="centerCrop"
         android:clipToOutline="true"
         android:background="@drawable/bg_circle"
-        android:contentDescription="Profile picture"
+        android:contentDescription="@string/cd_profile_picture"
         app:layout_constraintTop_toBottomOf="@id/tvAppName"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -47,13 +48,13 @@
         app:layout_constraintStart_toEndOf="@id/ivProfilePicture"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Stats: 3 TextView digabung angka+label jadi satu (hemat 3 view + 1 layout) -->
+    <!-- Stats -->
     <TextView
         android:id="@+id/tvStatsPosts"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="1\npost"
+        tools:text="1\npost"
         app:layout_constraintTop_toBottomOf="@id/tvUsername"
         app:layout_constraintStart_toEndOf="@id/ivProfilePicture"
         app:layout_constraintEnd_toStartOf="@id/tvStatsFollowers"
@@ -64,7 +65,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="434\nfollowers"
+        tools:text="434\nfollowers"
         app:layout_constraintTop_toTopOf="@id/tvStatsPosts"
         app:layout_constraintStart_toEndOf="@id/tvStatsPosts"
         app:layout_constraintEnd_toStartOf="@id/tvStatsFollowing" />
@@ -74,7 +75,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="728\nfollowing"
+        tools:text="728\nfollowing"
         app:layout_constraintTop_toTopOf="@id/tvStatsPosts"
         app:layout_constraintStart_toEndOf="@id/tvStatsFollowers"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -115,12 +116,12 @@
         android:layout_height="20dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_link"
-        android:contentDescription="Profile picture"
+        android:contentDescription="@string/cd_link_icon"
         app:layout_constraintTop_toBottomOf="@id/tvBio"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvBioLink"
+        android:id="@+id/tvLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -136,11 +137,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Edit Profile"
+        android:text="@string/action_edit_profile"
         android:textAllCaps="false"
         android:backgroundTint="#EFEFEF"
         android:textColor="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@id/tvBioLink"
+        app:layout_constraintTop_toBottomOf="@id/tvLink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnShareProfile"
         app:layout_constraintHorizontal_chainStyle="spread_inside" />
@@ -150,7 +151,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="Share Profile"
+        android:text="@string/action_share_profile"
         android:textAllCaps="false"
         android:backgroundTint="#EFEFEF"
         android:textColor="@android:color/black"
@@ -180,7 +181,7 @@
         android:layout_margin="1dp"
         android:background="#ACB"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 1"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toBottomOf="@id/btnEditProfile"
         app:layout_constraintStart_toStartOf="parent"
@@ -193,7 +194,7 @@
         android:layout_margin="1dp"
         android:background="#CAB"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 2"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost1"
         app:layout_constraintStart_toEndOf="@id/guidelineV1"
@@ -206,7 +207,7 @@
         android:layout_margin="1dp"
         android:background="#ABC"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 3"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost1"
         app:layout_constraintStart_toEndOf="@id/guidelineV2"
@@ -220,7 +221,7 @@
         android:layout_margin="1dp"
         android:background="#BAC"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 4"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toBottomOf="@id/ivPost1"
         app:layout_constraintStart_toStartOf="parent"
@@ -233,7 +234,7 @@
         android:layout_margin="1dp"
         android:background="#CBA"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 5"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost4"
         app:layout_constraintStart_toEndOf="@id/guidelineV1"
@@ -246,13 +247,13 @@
         android:layout_margin="1dp"
         android:background="#BCA"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 6"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost4"
         app:layout_constraintStart_toEndOf="@id/guidelineV2"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Row 2 -->
+    <!-- Row 3 -->
     <ImageView
         android:id="@+id/ivPost7"
         android:layout_width="0dp"
@@ -260,7 +261,7 @@
         android:layout_margin="1dp"
         android:background="#CAA"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 7"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toBottomOf="@id/ivPost4"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,7 +274,7 @@
         android:layout_margin="1dp"
         android:background="#ABB"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 8"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost7"
         app:layout_constraintStart_toEndOf="@id/guidelineV1"
@@ -286,7 +287,7 @@
         android:layout_margin="1dp"
         android:background="#AAC"
         android:scaleType="centerCrop"
-        android:contentDescription="Post 9"
+        android:contentDescription="@string/cd_post_image"
         app:layout_constraintDimensionRatio="4:5"
         app:layout_constraintTop_toTopOf="@id/ivPost7"
         app:layout_constraintStart_toEndOf="@id/guidelineV2"
